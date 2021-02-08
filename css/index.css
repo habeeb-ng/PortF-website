@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+
+body {
+    color: black;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container {
+    max-width: 500px;
+    margin:0 auto;
+    padding: 10px;
+}
+/*==================================*/
+/*Home page Header*/
+/*==================================*/
+header{
+    max-width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Screen\ Shot\ 2021-02-07\ at\ 7.56.50\ AM.png);
+    background-position: center;
+}
+header nav{
+    padding:0%;
+    margin: 0;
+    
+}
+header ul{
+    float: right;
+    justify-content: space-between;
+    padding: 15px;
+    
+   
+}
+
+.main-nav li{
+    margin-right:10px;
+    padding: 5px;
+    list-style: none;
+    
+}
+
+.main-nav-ul a {
+    text-decoration: none;
+    color: white;
+}
+/*end header nav*/
+
+
+/**/
+.container a {
+    text-decoration: none;
+}
+.main-header {
+    height: 100%;
+    display: flex;
+    margin-bottom: 30%;
+
+}
+.heading {
+    /*margin: auto 50px auto 50px;*/
+    margin: auto 0;
+}
+.main-header h1 {
+    font-size: 200%;
+    font-weight: normal;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;  
+}
+.portf {
+    margin-top: 10px;
+    border:1px solid white;
+    border-radius: 15px;
+    padding: 10px 40px;
+    color: black;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    animation: move-in 2s;
+    /*display: inline-block;*/
+}
+.portf:hover {
+    background-color: white;
+    color: black;
+}
+.portf a{
+    text-decoration: none;
+    color: white;
+    
+}
+.portf a:hover {
+    color: black;
+}
+/*===============*/
+/* animation*/
+/*================*/
+@keyframes move-in {
+    0%{
+        opacity: 0.2;
+        transform: translateX(-100%) scale(0.5);
+
+    }
+   50%{
+       opacity: 0.5; 
+   }
+   100%{
+       opacity: 1;
+       transform: translateX(0) scale(1)
+   }
+}
+/*===============*/
+/*end animation*/
+/*================*/
+
+/*===============*/
+/*header media query*/
+/*================*/
+
+@media screen and (min-width: 600px){
+    header{
+        height: 50vh;
+    }
+    .main-header{
+        display:flex;
+    }
+    .main-header h1{
+        font-size: 250%;
+        font-weight: normal;
+    }
+    .main-header .heading{
+        margin: auto 0;
+        
+    }
+    .main-nav li{
+        float: left;
+    }
+}
+@media screen and (min-width:980px){
+    .main-header h1{
+        font-size: 300%;
+    }
+
+}
+/*==================*/
+/*second page*/
+/*==================*/
+.main-body{
+    height: 100vh;
+    border-bottom: 1px solid black;
+}
+.text-section {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.main-body h1{
+    text-align: center;
+}
+
+.my-picture {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.pic-section p{
+    text-align: center;
+}
+@media screen and (min-width:750px){
+    .main-body{
+        height: auto;
+    }
+    .body-content{
+        max-width: 750px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .text-section {
+        text-align: center;
+        width: 40%;
+    }
+    
+}
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*For floats*/
+.group:before, /* the clearfix method code: all this selectors are targeting the group class and adding an empty  bit of content before an after it sand then clearing it*/
+.group:after {
+  content: "";
+  display: table;
+  
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; /*This rule is for other versions of internet explorer so that the floats are cleared in every browser and device under the sun*/
+} /* End of clearfix method. It is comletely bullet prof and useful for all website.*/
+
+
+
+
